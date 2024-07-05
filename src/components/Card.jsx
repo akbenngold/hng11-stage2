@@ -3,12 +3,12 @@ import Button from "./Button";
 import ratingIcon from "../assets/rating.svg";
 function Card({ picture, price, label, rating }) {
   return (
-    <div className="card bg-base-100 shadow-md flex flex-col items-center justify-center pb-4">
+    <div className="card bg-base-100 w-[85%] shadow-md flex flex-col items-center justify-center py-8 gap-1 ">
       <figure>
         <img src={picture} alt="Shoes" />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">
+      <div className="card-body gap-1">
+        <h2 className="card-title text-xl">
           {label}
           <div className="badge badge-secondary">NEW</div>
         </h2>
@@ -22,10 +22,7 @@ function Card({ picture, price, label, rating }) {
             <img src={ratingIcon} alt="" />
           </div>
         </div>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
-        </div>
+
         <div className="text-start font-medium text-2xl fredoka">₦ {price}</div>
       </div>
 

@@ -30,7 +30,7 @@ function MobileTopNav() {
   const scrollDirection = useScrollDirection();
   return (
     <div
-      className={`navbar bg-base-100 sticky ${
+      className={`navbar bg-[#faf0ff] w-full sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } transition-all duration-500 z-50`}
     >

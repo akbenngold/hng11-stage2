@@ -15,7 +15,7 @@ import MobileTopNav from "./components/MobileTopNav";
 
 function App() {
   return (
-    <div className="container flex flex-col gap-12 justify-center items-center">
+    <div className="container  flex flex-col gap-12 justify-between">
       <MobileTopNav />{" "}
       <Routes>
         <Route path="/" element={<Home />} />
