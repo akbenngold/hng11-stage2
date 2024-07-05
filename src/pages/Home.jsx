@@ -15,7 +15,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="mb-20 mx-auto w-full flex flex-col items-center justify-center">
+    <div className="mb-20 px-4 mx-auto w-full flex flex-col items-center justify-center">
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         TRENDY PRODUCTS
       </h1>
