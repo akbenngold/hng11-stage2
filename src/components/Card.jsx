@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "./Button";
 import ratingIcon from "../assets/rating.svg";
-function Card({ newProduct, picture, price, label, rating }) {
+import { ShopContext } from "../context/ShopContext";
+
+function Card({ newProduct, id, picture, price, label, rating }) {
+  const { addToCart, cartItems } = useContext(ShopContext);
+
+  const cartItemAmount = cartItems[id];
   return (
     <div className="card bg-white w-[85%] shadow-md flex flex-col items-center justify-center py-8 gap-1 ">
       <figure>
@@ -37,8 +42,13 @@ function Card({ newProduct, picture, price, label, rating }) {
         </div>
       </div>
 
-      <div className="w-[85%]">
-        <Button>Add Gift</Button>
+      <div
+        className="w-[85%]"
+        onClick={() => {
+          addToCart(id);
+        }}
+      >
+        <Button>Add Gift{cartItemAmount > 0 && <>({cartItemAmount})</>}</Button>
       </div>
     </div>
   );

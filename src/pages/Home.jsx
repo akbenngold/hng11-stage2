@@ -32,6 +32,7 @@ function Home() {
                 label={product.productName}
                 rating={product.productRating}
                 newProduct={product.newProduct}
+                id={product.id}
               />
             ))}
       </div>

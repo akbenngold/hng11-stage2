@@ -11,7 +11,7 @@ function Checkout() {
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-[1.5rem]"> Shipping Address</h2>
           <div className="border-2 p-4">
-            <h3 className="font-medium text-[1.5rem] flex gap-2 items-center">
+            <h3 className="font-medium text-[1rem] flex gap-2 items-center">
               <input
                 type="radio"
                 name="radio-1"
