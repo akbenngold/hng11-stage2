@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,7 @@
   color: #ffff;
   border-style: none;
   height: auto;
+  width: inherit;
 border-radius: 1000px;
 }
 .btm-nav a.active {
@@ -26,4 +29,28 @@ border-radius: 1000px;
   background-color: #D9455F;
   border-radius: 50%;
   margin-top: 5px;
+}
+
+
+.fredoka{
+  font-family: "Fredoka", sans-serif;
+}
+
+.brush-underline {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  z-index: 1;
+}
+.brush-underline::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(to right, rgba(217, 69, 96),rgba(199, 63, 127, 0.7),rgba(237, 85, 237) );
+  z-index: -1;
+  transform: rotate(-2deg);
+  opacity: 0.8;
 }

@@ -11,10 +11,12 @@ import { GoHome, GoHomeFill } from "react-icons/go";
 import { RiSearchFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
 import { FaListAlt } from "react-icons/fa";
+import MobileTopNav from "./components/MobileTopNav";
 
 function App() {
   return (
-    <>
+    <div className="container flex flex-col gap-12 justify-center items-center">
+      <MobileTopNav />{" "}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
@@ -29,15 +31,18 @@ function App() {
           <RiSearchFill size="22px" />
           {/* <span className="btm-nav-label">Messages</span> */}
         </NavLink>
-        <NavLink to="/list">
-          <FaListAlt size="22px" />
-        </NavLink>{" "}
         <NavLink to="/cart">
+          <div className="indicator">
+            <span className="indicator-item badge badge-secondary">3</span>
+            <FaListAlt size="22px" />
+          </div>
+        </NavLink>{" "}
+        <NavLink to="/list">
           <FaUser size="22px" />
           {/* <span className="btm-nav-label">Profile</span> */}
         </NavLink>
       </div>
-    </>
+    </div>
   );
 }
 
