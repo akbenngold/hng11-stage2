@@ -33,7 +33,9 @@ function Card({ picture, price, label, rating }) {
         </div>
       </div>
 
-      <Button>Add Gift</Button>
+      <div className="w-[85%]">
+        <Button>Add Gift</Button>
+      </div>
     </div>
   );
 }

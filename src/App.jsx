@@ -10,7 +10,7 @@ import Checkout from "./pages/Checkout";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { RiSearchFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
-import { FaListAlt } from "react-icons/fa";
+import { FaListAlt, FaShoppingCart } from "react-icons/fa";
 import MobileTopNav from "./components/MobileTopNav";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <NavLink to="/cart">
           <div className="indicator">
             <span className="indicator-item badge badge-secondary">3</span>
-            <FaListAlt size="22px" />
+            <FaShoppingCart size="22px" />
           </div>
         </NavLink>{" "}
         <NavLink to="/list">

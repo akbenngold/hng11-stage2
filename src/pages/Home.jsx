@@ -11,7 +11,7 @@ function Home() {
     // Simulate loading time
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 200);
   }, []);
 
   return (
