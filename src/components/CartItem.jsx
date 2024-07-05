@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import sicm from "../assets/SICM.png";
 
 function CartItem() {
   const [productCount, setProductCount] = useState(1);
@@ -7,7 +8,7 @@ function CartItem() {
   return (
     <div className="card card-side bg-white shadow-xl fredoka">
       <figure>
-        <img src="src/assets/SICM.png" alt="Movie" />
+        <img src={sicm} alt="Movie" />
       </figure>
       <div className="card-body flex flex-row justify-between">
         <div className="flex flex-col gap-2">
