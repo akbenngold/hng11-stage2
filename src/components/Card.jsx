@@ -23,7 +23,14 @@ function Card({ picture, price, label, rating }) {
           </div>
         </div>
 
-        <div className="text-start font-medium text-2xl fredoka">₦ {price}</div>
+        <div className="flex justify-between items-center">
+          <div className="text-start font-medium text-2xl fredoka">
+            ₦ {price}
+          </div>
+          <div className="card-actions justify-end">
+            <div className="badge badge-outline">Fashion</div>
+          </div>
+        </div>
       </div>
 
       <Button>Add Gift</Button>
