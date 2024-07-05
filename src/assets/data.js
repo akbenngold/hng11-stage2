@@ -1,114 +1,120 @@
+import giorgio from "../assets/GiorgioAM.png";
+import giorgiow from "../assets/GiorgioAW.png";
+import sicm from "../assets/SICM.png";
+import sicm2 from "../assets/SICM2.png";
+import smartcm from "../assets/SmartCW.png";
+import smartcw from "../assets/SmartCM.png";
+
 const products = [
   {
     productName: "Giorgio Armani for men 5434 (100ml)",
     productPrice: 54.55,
-    productPicture: "../assets/GiorgioAM.png",
+    productPicture: giorgio,
     productRating: 4.3,
   },
-
   {
     productName: "Giorgio Armani for women 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.7,
-    productPicture: "../assets/GiorgioAW.png",
+    productPicture: giorgiow,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.3,
-    productPicture: "../assets/SICM.png",
+    productPicture: sicm,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.8,
-    productPicture: "../assets/SICM2.png",
+    productPicture: sicm2,
   },
   {
     productName: "Smart Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.4,
-    productPicture: "../assets/SmartCM.png",
+    productPicture: smartcm,
   },
   {
     productName: "Smart Collection for women 2215 (75ml)",
     productPrice: 54.55,
     productRating: 4.7,
-    productPicture: "../assets/SmartCW.png",
+    productPicture: smartcw,
   },
   {
     productName: "Giorgio Armani for men 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.1,
-    productPicture: "../assets/GiorgioAM.png",
+    productPicture: giorgio,
   },
 
   {
     productName: "Giorgio Armani for women 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.5,
-    productPicture: "../assets/GiorgioAW.png",
+    productPicture: giorgiow,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 3.9,
-    productPicture: "../assets/SICM.png",
+    productPicture: sicm,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.6,
-    productPicture: "../assets/SICM2.png",
+    productPicture: sicm2,
   },
   {
     productName: "Smart Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.7,
-    productPicture: "../assets/SmartCM.png",
+    productPicture: smartcm,
   },
   {
     productName: "Smart Collection for women 2215 (75ml)",
     productPrice: 54.55,
     productRating: 4.1,
-    productPicture: "../assets/SmartCW.png",
+    productPicture: smartcw,
   },
   {
     productName: "Giorgio Armani for men 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.2,
-    productPicture: "../assets/GiorgioAM.png",
+    productPicture: giorgio,
   },
 
   {
     productName: "Giorgio Armani for women 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.9,
-    productPicture: "../assets/GiorgioAW.png",
+    productPicture: giorgiow,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.7,
-    productPicture: "../assets/SICM.png",
+    productPicture: sicm,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.6,
-    productPicture: "../assets/SICM2.png",
+    productPicture: sicm2,
   },
   {
     productName: "Smart Collection for men 1102 (50ml)",
     productPrice: 54.55,
     productRating: 4.5,
-    productPicture: "../assets/SmartCM.png",
+    productPicture: smartcm,
   },
   {
     productName: "Smart Collection for women 2215 (75ml)",
     productPrice: 54.55,
     productRating: 4.3,
-    productPicture: "../assets/SmartCW.png",
+    productPicture: smartcw,
   },
 ];
 export default products;
