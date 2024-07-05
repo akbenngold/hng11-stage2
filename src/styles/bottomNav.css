@@ -1,0 +1,17 @@
+
+  
+  .bottom-nav a.active {
+    color: #007bff;
+  }
+  
+  .bottom-nav a.active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  

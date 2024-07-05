@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.btm-nav a{
+  color: white;
+}
+.btm-nav a.active {
+  color: #ffff;
+  border-style: none;
+  height: auto;
+border-radius: 1000px;
+}
+.btm-nav a.active {
+  color: #D9455F;
+  background-color: black;
+}
+
+.btm-nav a.active::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 7px;
+  height: 7px;
+  background-color: #D9455F;
+  border-radius: 50%;
+  margin-top: 5px;
+}
