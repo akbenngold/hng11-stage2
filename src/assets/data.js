@@ -17,6 +17,7 @@ const products = [
     productPrice: 54.55,
     productRating: 4.7,
     productPicture: giorgiow,
+    newProduct: true,
   },
   {
     productName: "SI Collection for men 1102 (50ml)",
@@ -41,11 +42,13 @@ const products = [
     productPrice: 54.55,
     productRating: 4.7,
     productPicture: smartcw,
+    newProduct: true,
   },
   {
     productName: "Giorgio Armani for men 5434 (100ml)",
     productPrice: 54.55,
     productRating: 4.1,
+    newProduct: true,
     productPicture: giorgio,
   },
 
@@ -69,6 +72,7 @@ const products = [
   },
   {
     productName: "Smart Collection for men 1102 (50ml)",
+    newProduct: true,
     productPrice: 54.55,
     productRating: 4.7,
     productPicture: smartcm,
@@ -114,6 +118,7 @@ const products = [
     productName: "Smart Collection for women 2215 (75ml)",
     productPrice: 54.55,
     productRating: 4.3,
+    newProduct: true,
     productPicture: smartcw,
   },
 ];

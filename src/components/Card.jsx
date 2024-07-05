@@ -1,16 +1,20 @@
 import React from "react";
 import Button from "./Button";
 import ratingIcon from "../assets/rating.svg";
-function Card({ picture, price, label, rating }) {
+function Card({ newProduct, picture, price, label, rating }) {
   return (
-    <div className="card bg-base-100 w-[85%] shadow-md flex flex-col items-center justify-center py-8 gap-1 ">
+    <div className="card bg-white w-[85%] shadow-md flex flex-col items-center justify-center py-8 gap-1 ">
       <figure>
         <img src={picture} alt="Shoes" />
       </figure>
       <div className="card-body gap-1">
         <h2 className="card-title text-xl">
           {label}
-          <div className="badge badge-secondary">NEW</div>
+          {newProduct && (
+            <div className="badge badge-secondary text-white border-none bg-purple-600">
+              NEW
+            </div>
+          )}
         </h2>
 
         <div className="flex justify-between items-center border-y-2 py-2 px-1 border-slate-100">

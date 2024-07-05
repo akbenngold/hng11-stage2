@@ -5,7 +5,7 @@ function CartItem() {
   const [productCount, setProductCount] = useState(1);
 
   return (
-    <div className="card card-side bg-base-100 shadow-xl fredoka">
+    <div className="card card-side bg-white shadow-xl fredoka">
       <figure>
         <img src="src/assets/SICM.png" alt="Movie" />
       </figure>

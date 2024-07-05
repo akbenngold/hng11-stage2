@@ -31,6 +31,7 @@ function Home() {
                 price={product.productPrice}
                 label={product.productName}
                 rating={product.productRating}
+                newProduct={product.newProduct}
               />
             ))}
       </div>

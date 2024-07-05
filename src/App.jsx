@@ -33,7 +33,9 @@ function App() {
         </NavLink>
         <NavLink to="/cart">
           <div className="indicator">
-            <span className="indicator-item badge badge-secondary">3</span>
+            <span className="indicator-item badge bg-purple-600 border-none badge-secondary">
+              3
+            </span>
             <FaShoppingCart size="22px" />
           </div>
         </NavLink>{" "}
