@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import logo from "../assets/logo.png";
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -32,10 +32,12 @@ function MobileTopNav() {
     <div
       className={`navbar bg-[#faf0ff] w-full sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } transition-all duration-500 z-50`}
+      } lg:hidden transition-all duration-500 z-50`}
     >
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl fredoka">TimbuCloudShop☁️</a>
+        <a className="btn btn-ghost text-xl fredoka flex items-center">
+          TimbuCloudShop <img className="h-6" src={logo} alt="" />
+        </a>
       </div>
       <div className="flex-none gap-2">
         <div className="dropdown dropdown-end">

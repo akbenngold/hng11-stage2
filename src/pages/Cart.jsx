@@ -52,12 +52,22 @@ function Cart() {
               <div>N{getTotalCartAmount() + 1000}</div>
             </div>
           </div>
-          <Button className="w-full">
-            <Link to="/checkout">Checkout</Link>
-          </Button>
+          <Link to="/checkout" className="w-full">
+            <Button>Checkout</Button>
+          </Link>
         </>
       ) : (
-        "Your cart is empty"
+        <div>
+          {" "}
+          Your cart is empty. Go back to{" "}
+          <Link to="/" className="text-[#D9455F] animate-bounce">
+            product
+          </Link>{" "}
+          page and add some products to card!
+          <div className="text-[#D9455F] m-4 animate-bounce text-center text-xl">
+            <Link to="/"> Products</Link>
+          </div>
+        </div>
       )}
     </div>
   );

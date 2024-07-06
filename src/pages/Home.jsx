@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Card from "../components/Card";
 import Skeleton from "../components/Skeleton";
 import products from "../assets/data";
+import Hero from "../components/Hero";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -16,8 +17,12 @@ function Home() {
 
   return (
     <div className="mb-20 px-4 mx-auto w-full flex flex-col items-center justify-center">
-      <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
-        TRENDY PRODUCTS
+      <Hero />
+      <h1
+        id="products"
+        className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6"
+      >
+        OUR PRODUCTS
       </h1>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 w-full place-items-center my-9">
         {loading

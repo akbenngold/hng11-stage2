@@ -10,19 +10,23 @@ import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import MobileTopNav from "./components/MobileTopNav";
 import { ShopContext } from "./context/ShopContext";
+import DesktopNavbar from "./components/DesktopNavbar";
+import Footer from "./components/Footer";
 
 function App() {
   const { getUniqueItemsCount } = useContext(ShopContext);
 
   return (
-    <div className="container  flex flex-col gap-12 justify-between fredoka">
-      <MobileTopNav />{" "}
+    <div className=" flex flex-col fredoka justify-between h-[100vh] w-[100vw]">
+      <MobileTopNav /> <DesktopNavbar />
+      {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
-      <div className="btm-nav bg-black rounded-full">
+      {/* bottom nav mobile */}
+      <div className="btm-nav bg-black rounded-full lg:hidden">
         <NavLink to="/">
           <GoHomeFill size="22px" />
         </NavLink>
@@ -41,6 +45,8 @@ function App() {
           <FaUser size="22px" />
         </NavLink>
       </div>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

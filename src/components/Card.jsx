@@ -13,7 +13,7 @@ function Card({ newProduct, id, picture, price, label, rating }) {
         <img src={picture} alt="Shoes" />
       </figure>
       <div className="card-body gap-1">
-        <h2 className="card-title text-xl">
+        <h2 className="card-title text-sm md:text-xl">
           {label}
           {newProduct && (
             <div className="badge badge-secondary text-white border-none bg-purple-600">
@@ -23,7 +23,7 @@ function Card({ newProduct, id, picture, price, label, rating }) {
         </h2>
 
         <div className="flex justify-between items-center border-y-2 py-2 px-1 border-slate-100">
-          <div className="text-[#E07E46] fredoka bg-[#F7F7F7] rounded-lg p-2 w-16">
+          <div className="text-[#E07E46] text-sm md:text-base fredoka bg-[#F7F7F7] rounded-lg p-2 w-16">
             Halal
           </div>
           <div className="flex">
@@ -33,7 +33,7 @@ function Card({ newProduct, id, picture, price, label, rating }) {
         </div>
 
         <div className="flex justify-between items-center">
-          <div className="text-start font-medium text-2xl fredoka">
+          <div className="text-start font-medium text-xl md:text-2xl fredoka">
             ₦ {price}
           </div>
           <div className="card-actions justify-end">
@@ -48,7 +48,9 @@ function Card({ newProduct, id, picture, price, label, rating }) {
           addToCart(id);
         }}
       >
-        <Button>Add Gift{cartItemAmount > 0 && <>({cartItemAmount})</>}</Button>
+        <Button>
+          Add to Cart{cartItemAmount > 0 && <>({cartItemAmount})</>}
+        </Button>
       </div>
     </div>
   );
