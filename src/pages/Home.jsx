@@ -17,7 +17,13 @@ function Home() {
 
   return (
     <div className="mb-20 px-4 mx-auto w-full flex flex-col items-center justify-center">
+      {/*  */}
+      {/* Hero */}
+      {/*  */}
       <Hero />
+      {/*  */}
+      {/* Products */}
+      {/*  */}
       <h1
         id="products"
         className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6"

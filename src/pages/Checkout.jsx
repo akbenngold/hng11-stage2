@@ -11,6 +11,8 @@ function Checkout() {
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         CHECKOUT
       </h1>
+      {/*  */}
+      {/*  */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-base md:text-[1.5rem]">
@@ -47,7 +49,8 @@ function Checkout() {
             <span className="">+</span>Add new address
           </div>
         </div>
-
+        {/*  */}
+        {/*  */}
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-base md:text-[1.5rem]">
             Payment Method
@@ -59,6 +62,9 @@ function Checkout() {
             <span className="">+</span>Add new card
           </div>
         </div>
+        {/*  */}
+        {/*  */}
+
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-base md:text-[1.5rem]">
             Order Summary

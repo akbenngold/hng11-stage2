@@ -18,14 +18,20 @@ function App() {
 
   return (
     <div className=" flex flex-col fredoka justify-between h-[100vh] w-[100vw]">
-      <MobileTopNav /> <DesktopNavbar />
+      {/* NavBar */}
+      <MobileTopNav />
+      <DesktopNavbar />
+      {/*  */}
       {/* Routes */}
+      {/*  */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
+      {/*  */}
       {/* bottom nav mobile */}
+      {/*  */}
       <div className="btm-nav bg-black rounded-full lg:hidden">
         <NavLink to="/">
           <GoHomeFill size="22px" />
@@ -45,7 +51,9 @@ function App() {
           <FaUser size="22px" />
         </NavLink>
       </div>
+      {/*  */}
       {/* footer */}
+      {/*  */}
       <Footer />
     </div>
   );

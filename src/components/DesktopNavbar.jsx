@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../assets/logo.png";
 import image from "../assets/image.png";
-
+import { ShopContext } from "../context/ShopContext";
 import { NavLink } from "react-router-dom";
+
 function DesktopNavbar() {
+  const { getUniqueItemsCount } = useContext(ShopContext);
+
   return (
-    <div className="navbar  bg-[#FBE0C9] px-20 hidden z-50 w-[100vw] lg:flex fixed">
+    <div className="navbar  bg-[#FBE0C9] px-20 hidden z-50 w-[100vw] lg:flex  fixed">
       <div className="navbar-start">
         <div className="">
           <div className="">
@@ -14,7 +17,14 @@ function DesktopNavbar() {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/cart">Cart</NavLink>
+                <NavLink to="/cart">
+                  <div className="indicator">
+                    <span className="indicator-item badge bg-purple-600 border-none badge-secondary">
+                      {getUniqueItemsCount()}
+                    </span>
+                    Cart
+                  </div>
+                </NavLink>
               </li>
               <li>
                 <NavLink to="/checkout">Checkout</NavLink>

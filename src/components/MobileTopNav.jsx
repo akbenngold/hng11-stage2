@@ -25,6 +25,15 @@ function useScrollDirection() {
 
   return scrollDirection;
 }
+{
+  /*  */
+}
+{
+  /*  */
+}
+{
+  /*  */
+}
 
 function MobileTopNav() {
   const scrollDirection = useScrollDirection();
