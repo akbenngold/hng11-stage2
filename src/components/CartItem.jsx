@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import sicm from "../assets/SICM.png";
 import { ShopContext } from "../context/ShopContext";
 
 function CartItem({ newProduct, id, picture, price, label, rating }) {
-  const { addToCart, cartItems, remFromCart } = useContext(ShopContext);
+  const { addToCart, cartItems, remFromCart, resetCartItem } =
+    useContext(ShopContext);
   const cartItemAmount = cartItems[id];
 
   return (
@@ -43,7 +43,12 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
           </div>
         </div>
         <div className="flex flex-col justify-between items-end">
-          <div>
+          <div
+            onClick={() => {
+              console.log("yes");
+              resetCartItem(id);
+            }}
+          >
             <RiDeleteBin6Line />
           </div>
           <div>{price}</div>

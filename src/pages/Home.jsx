@@ -26,7 +26,7 @@ function Home() {
               .map((_, index) => <Skeleton key={index} />)
           : products.map((product) => (
               <Card
-                key={product.productId}
+                key={product.id}
                 picture={product.productPicture}
                 price={product.productPrice}
                 label={product.productName}
