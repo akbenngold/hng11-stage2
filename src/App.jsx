@@ -12,7 +12,7 @@ import MobileTopNav from "./components/MobileTopNav";
 import { ShopContext } from "./context/ShopContext";
 
 function App() {
-  const { cartItems } = useContext(ShopContext);
+  const { getUniqueItemsCount } = useContext(ShopContext);
 
   return (
     <div className="container  flex flex-col gap-12 justify-between fredoka">
@@ -32,7 +32,7 @@ function App() {
         <NavLink to="/cart">
           <div className="indicator">
             <span className="indicator-item badge bg-purple-600 border-none badge-secondary">
-              3{" "}
+              {getUniqueItemsCount()}
             </span>
             <FaShoppingCart size="22px" />
           </div>

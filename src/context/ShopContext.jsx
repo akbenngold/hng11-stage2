@@ -27,6 +27,16 @@ export const ShopContextProvider = (props) => {
     return totalAmount;
   };
 
+  const getUniqueItemsCount = () => {
+    let uniqueItemsCount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        uniqueItemsCount++;
+      }
+    }
+    return uniqueItemsCount;
+  };
+
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
@@ -48,6 +58,7 @@ export const ShopContextProvider = (props) => {
     remFromCart,
     resetCartItem,
     getTotalCartAmount,
+    getUniqueItemsCount,
   };
 
   return (

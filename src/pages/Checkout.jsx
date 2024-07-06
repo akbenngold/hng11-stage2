@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import cardinfo from "../assets/cardinfo.png";
 import Button from "../components/Button";
+import { ShopContext } from "../context/ShopContext";
+
 function Checkout() {
+  const { getTotalCartAmount } = useContext(ShopContext);
+
   return (
     <div className="container px-6 pb-40 flex flex-col items-center gap-10">
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
@@ -45,7 +49,7 @@ function Checkout() {
           <div className="fredoka w-full px-4 mt-4 flex flex-col gap-4">
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Subtotal</div>
-              <div>N1000</div>
+              <div>N{getTotalCartAmount()}</div>
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Delivery fee</div>
@@ -53,11 +57,11 @@ function Checkout() {
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Discount</div>
-              <div>N1000</div>
+              <div>N0</div>
             </div>
             <div className="flex justify-between mt-8 font-semibold">
               <div>Total cost</div>
-              <div>N1000</div>
+              <div>N{getTotalCartAmount() + 1000}</div>
             </div>
           </div>
           <Button className="w-full">Confirm</Button>

@@ -3,6 +3,7 @@ import CartItem from "../components/CartItem";
 import products from "../assets/data";
 import Button from "../components/Button";
 import { ShopContext } from "../context/ShopContext";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
@@ -51,7 +52,9 @@ function Cart() {
               <div>N{getTotalCartAmount() + 1000}</div>
             </div>
           </div>
-          <Button className="w-full">Checkout</Button>
+          <Button className="w-full">
+            <Link to="/checkout">Checkout</Link>
+          </Button>
         </>
       ) : (
         "Your cart is empty"
