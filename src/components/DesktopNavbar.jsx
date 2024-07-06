@@ -19,7 +19,7 @@ function DesktopNavbar() {
               <li>
                 <NavLink to="/cart">
                   <div className="indicator">
-                    <span className="indicator-item badge bg-purple-600 border-none badge-secondary">
+                    <span className="indicator-item badge bg-purple-600 text-white border-none badge-secondary">
                       {getUniqueItemsCount()}
                     </span>
                     Cart

@@ -13,7 +13,7 @@ function Card({ newProduct, id, picture, price, label, rating }) {
         <img src={picture} alt="Shoes" />
       </figure>
       <div className="card-body gap-1">
-        <h2 className="card-title text-sm md:text-xl">
+        <h2 className="card-title text-sm md:text-xl font-medium">
           {label}
           {newProduct && (
             <div className="badge badge-secondary text-white border-none bg-purple-600">
@@ -26,7 +26,7 @@ function Card({ newProduct, id, picture, price, label, rating }) {
           <div className="text-[#E07E46] text-sm md:text-base fredoka bg-[#F7F7F7] rounded-lg p-2 w-16">
             Halal
           </div>
-          <div className="flex">
+          <div className="flex text-xs">
             {rating}
             <img src={ratingIcon} alt="" />
           </div>

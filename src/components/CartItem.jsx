@@ -8,14 +8,16 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
   const cartItemAmount = cartItems[id];
 
   return (
-    <div className="card card-side bg-white shadow-xl fredoka">
+    <div className="card card-side bg-white shadow-xl fredoka px-6">
       <figure>
         <img src={picture} alt="Movie" />
       </figure>
       <div className="card-body flex flex-row justify-between">
         <div className="flex flex-col gap-2">
-          <h2 className="font-semibold">{label}</h2>
-          <p>{rating}</p>
+          <h2 className="font-medium text-xs md:text-sm lg:text-base">
+            {label}
+          </h2>
+          <p className="text-xs">{rating}</p>
           <div className="flex gap-2">
             {cartItemAmount < 1 ? (
               <div className="bg-neutral-300 text-white h-6 w-6 font-bold flex items-center justify-center rounded-full">
