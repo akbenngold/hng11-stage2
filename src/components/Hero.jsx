@@ -11,7 +11,7 @@ function Hero() {
       }}
     >
       <div className="hero-content text-neutral-content">
-        <div className="max-w-md">
+        <div className="max-w-full">
           <h1 className="mb-5 text-2xl md:text-5xl font-semibold lg:text-6xl">
             Discover Your Signature Scent With TimbuShop
           </h1>
