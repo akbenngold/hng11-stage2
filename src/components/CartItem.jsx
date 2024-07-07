@@ -20,7 +20,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
           <p className="text-xs">{rating}</p>
           <div className="flex gap-2">
             {cartItemAmount < 1 ? (
-              <div className="bg-neutral-300 text-white h-6 w-6 font-bold flex items-center justify-center rounded-full">
+              <div className="bg-neutral-300  text-white h-6 w-6 font-bold flex items-center justify-center rounded-full">
                 -
               </div>
             ) : (
@@ -28,7 +28,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
                 onClick={() => {
                   remFromCart(id);
                 }}
-                className="h-6 w-6 text-white font-bold flex items-center justify-center rounded-full bg-[#D9455F]"
+                className="h-6 w-6 text-white font-bold cursor-pointer flex items-center justify-center rounded-full bg-[#D9455F]"
               >
                 -
               </div>
@@ -38,7 +38,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
               onClick={() => {
                 addToCart(id);
               }}
-              className="h-6 w-6 text-white font-bold flex items-center justify-center rounded-full bg-[#D9455F]"
+              className="h-6 w-6 text-white cursor-pointer font-bold flex items-center justify-center rounded-full bg-[#D9455F]"
             >
               +
             </div>
@@ -50,6 +50,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
               console.log("yes");
               resetCartItem(id);
             }}
+            className="cursor-pointer"
           >
             <RiDeleteBin6Line />
           </div>
