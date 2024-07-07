@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { ShopContext } from "../context/ShopContext";
 import { Link } from "react-router-dom";
 import viewed from "../assets/viewed";
+import cartimg from "../assets/cart.png";
 import Card from "../components/Card";
 
 function Cart() {
@@ -60,14 +61,16 @@ function Cart() {
           </Link>
         </>
       ) : (
-        <div>
-          {" "}
-          Your cart is empty. Go back to{" "}
-          <Link to="/" className="text-[#D9455F] animate-bounce">
-            product
-          </Link>{" "}
-          page and add some products to card!
-          <div className="text-[#D9455F] m-4 animate-bounce text-center text-xl">
+        <div className="flex flex-col items-center gap-8">
+          <img src={cartimg} className="mt-8" alt="" />
+          <div>
+            Your cart is empty. Go back to{" "}
+            <Link to="/" className="text-[#D9455F]">
+              product
+            </Link>{" "}
+            page and add some products to card!
+          </div>
+          <div className="text-[#D9455F] m-4  text-center text-xl">
             <Link to="/"> Products</Link>
           </div>
         </div>
