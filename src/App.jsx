@@ -1,18 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 import { Route, Routes, NavLink } from "react-router-dom";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import { GoHomeFill } from "react-icons/go";
-
+import { RiSearchFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import MobileTopNav from "./components/MobileTopNav";
 import { ShopContext } from "./context/ShopContext";
 import DesktopNavbar from "./components/DesktopNavbar";
 import Footer from "./components/Footer";
-import { MdShoppingCartCheckout } from "react-icons/md";
 
 function App() {
   const { getUniqueItemsCount } = useContext(ShopContext);
@@ -38,7 +37,7 @@ function App() {
           <GoHomeFill size="22px" />
         </NavLink>
         <NavLink to="/checkout">
-          <MdShoppingCartCheckout size="22px" />
+          <RiSearchFill size="22px" />
         </NavLink>
         <NavLink to="/cart">
           <div className="indicator">
