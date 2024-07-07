@@ -10,7 +10,7 @@ function Hero() {
         backgroundPosition: "top",
       }}
     >
-      <div className="hero-content max-w-full text-neutral-content">
+      <div className="hero-content flex flex-col max-w-full text-neutral-content">
         
           <h1 className="mb-5 text-xl md:text-5xl font-semibold lg:text-6xl">
             Discover Your Signature <br/> Scent With TimbuShop
