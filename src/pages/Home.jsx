@@ -26,7 +26,7 @@ function Home() {
       {/*  */}
       <h1
         id="products"
-        className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mt-20 mb-6"
+        className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mt-8 mb-6"
       >
         OUR PRODUCTS
       </h1>
