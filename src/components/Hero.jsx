@@ -10,9 +10,9 @@ function Hero() {
         backgroundPosition: "top",
       }}
     >
-      <div className="hero-content text-neutral-content">
-        <div className="max-w-full">
-          <h1 className="mb-5 text-2xl md:text-5xl font-semibold lg:text-6xl">
+      <div className="hero-content max-w-full text-neutral-content">
+        
+          <h1 className="mb-5 text-xl md:text-5xl font-semibold lg:text-6xl">
             Discover Your Signature <br/> Scent With TimbuShop
           </h1>
           <p className="mb-5 text-white text-xs md:text-base lg:text-xl">
@@ -21,7 +21,7 @@ function Hero() {
           <button className="btn btn-primary px-1 md:px-6 text-white font-normal bg-black border-none w-20 md:w-36 hover:bg-[#D9455F]">
             <a href="#products">Shop now</a>
           </button>
-        </div>
+        
       </div>{" "}
       <div className="hero-overlay bg-contain bg-opacity-60"></div>
     </div>
