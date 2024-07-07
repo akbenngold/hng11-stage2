@@ -12,7 +12,7 @@ function Hero() {
     >
       <div className="hero-content flex flex-col items-start justify-center basis-3/4 text-neutral-content">
         
-          <h1 className="md:mb-5 text-xl md:text-5xl font-semibold lg:text-6xl">
+          <h1 className="md:mb-5 text-xl md:text-5xl font-normal lg:text-6xl">
             Discover Your Signature <br/> Scent With TimbuShop
           </h1>
           <p className="md:mb-5 text-white text-xs md:text-base lg:text-xl">
