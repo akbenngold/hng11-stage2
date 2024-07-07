@@ -1,44 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 
-function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = useState(null);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const updateScrollDirection = () => {
-      const scrollY = window.scrollY;
-      const direction = scrollY > lastScrollY ? "down" : "up";
-
-      if (
-        direction !== scrollDirection &&
-        Math.abs(scrollY - lastScrollY) > 10
-      ) {
-        setScrollDirection(direction);
-      }
-
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-    };
-
-    window.addEventListener("scroll", updateScrollDirection);
-
-    return () => {
-      window.removeEventListener("scroll", updateScrollDirection);
-    };
-  }, [scrollDirection]);
-
-  return scrollDirection;
-}
-
 function MobileTopNav() {
-  const scrollDirection = useScrollDirection();
-
   return (
     <div
-      className={`navbar bg-[#FAFAFA] w-full sticky ${
-        scrollDirection === "down" ? "-top-24" : "top-0"
-      } lg:hidden transition-all duration-500 z-50`}
+      className={`navbar bg-[#FAFAFA] w-full sticky top-0 lg:hidden transition-all duration-500 z-50`}
     >
       <div className="flex-1">
         <a className="btn btn-ghost text-xl fredoka flex items-center">
