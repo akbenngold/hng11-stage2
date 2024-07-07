@@ -4,7 +4,7 @@ import hero from "../assets/hero.png";
 function Hero() {
   return (
     <div
-      className="hero my-2 w-[100vw] h-[30vh] flex bg-cover md:bg-cover md:h-[50vh] lg:h-[100vh] justify-between px-6 md:px-10 lg:px-32 py-12 bg-no-repeat"
+      className="hero my-2 w-[100vw] h-[35vh] flex bg-cover md:bg-cover md:h-[50vh] lg:h-[100vh] justify-between px-6 md:px-10 lg:px-32 py-32 bg-no-repeat"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundPosition: "top",
