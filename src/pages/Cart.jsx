@@ -75,7 +75,7 @@ function Cart() {
           </div>
         </div>
       )}
-      <div className="flex-col hidden md:flex gap-6 items-center justify-center">
+      <div className="flex-col flex gap-6 items-center justify-center">
         <h2 className="text-xl">Customers who viewed this also viewed</h2>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {" "}
