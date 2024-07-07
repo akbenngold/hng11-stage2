@@ -18,7 +18,7 @@ function Hero() {
           <p className="md:mb-5 text-white text-xs md:text-base lg:text-xl">
             Get 15% off any Order above N4500
           </p>
-          <button className="btn btn-primary px-6 py-4 md:px-6 text-white font-normal bg-black border-none w-24 md:w-36 hover:bg-[#D9455F]">
+          <button className="btn btn-primary px-6 py-[0.75rem] text-sm md:px-6 text-white font-normal bg-black border-none w-24 md:w-36 hover:bg-[#D9455F]">
             <a href="#products">Shop now</a>
           </button>
         
