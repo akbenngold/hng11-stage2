@@ -72,15 +72,15 @@ function Checkout() {
           <div className="fredoka w-full px-4 mt-4 flex flex-col gap-4">
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Subtotal</div>
-              <div>N{getTotalCartAmount()}</div>
+              <div className="font-semibold">N{getTotalCartAmount()}</div>
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Delivery fee</div>
-              <div>N1000</div>
+              <div className="font-semibold">N1000</div>
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Discount</div>
-              <div>N0</div>
+              <div className="font-semibold">N0</div>
             </div>
             <div className="flex justify-between mt-8 font-semibold">
               <div>Total cost</div>

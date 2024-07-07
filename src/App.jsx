@@ -17,7 +17,7 @@ function App() {
   const { getUniqueItemsCount } = useContext(ShopContext);
 
   return (
-    <div className=" flex flex-col fredoka justify-between h-[100vh] w-[100vw]">
+    <div className=" flex flex-col fredoka justify-between h-[100vh] w-[100vw] overflow-x-hidden">
       {/* NavBar */}
       <MobileTopNav />
       <DesktopNavbar />

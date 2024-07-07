@@ -4,18 +4,21 @@ import hero from "../assets/hero.png";
 function Hero() {
   return (
     <div
-      className="hero mt-2 w-[100vw] h-[100vh] hidden lg:flex bg-contain  justify-between px-32 bg-no-repeat"
+      className="hero my-2 w-[100vw] h-[30vh] flex bg-cover md:bg-cover md:h-[50vh] lg:h-[100vh] justify-between px-6 md:px-10 lg:px-32 py-12 bg-no-repeat"
       style={{
         backgroundImage: `url(${hero})`,
+        backgroundPosition: "top",
       }}
     >
       <div className="hero-content text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-3xl ">
+          <h1 className="mb-5 text-2xl md:text-5xl font-semibold lg:text-6xl">
             Discover Your Signature Scent With TimbuShop
           </h1>
-          <p className="mb-5 text-white">Get 15% off any Order above $4500</p>
-          <button className="btn btn-primary text-white bg-black border-none w-36 hover:bg-[#D9455F]">
+          <p className="mb-5 text-white text-xs md:text-base lg:text-xl">
+            Get 15% off any Order above N4500
+          </p>
+          <button className="btn btn-primary px-1 md:px-6 text-white font-normal bg-black border-none w-20 md:w-36 hover:bg-[#D9455F]">
             <a href="#products">Shop now</a>
           </button>
         </div>

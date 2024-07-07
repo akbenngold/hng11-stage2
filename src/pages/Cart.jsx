@@ -4,6 +4,8 @@ import products from "../assets/data";
 import Button from "../components/Button";
 import { ShopContext } from "../context/ShopContext";
 import { Link } from "react-router-dom";
+import viewed from "../assets/viewed";
+import Card from "../components/Card";
 
 function Cart() {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
@@ -13,7 +15,8 @@ function Cart() {
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         CART
       </h1>
-
+      {/*  */}
+      {/*  */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 w-full place-items-center">
         {products.map((product) => {
           if (cartItems[product.id] !== 0) {
@@ -37,15 +40,15 @@ function Cart() {
           <div className="fredoka w-full px-4 mt-4 flex flex-col gap-4">
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Subtotal</div>
-              <div>N{getTotalCartAmount()}</div>
+              <div className="font-semibold">N{getTotalCartAmount()}</div>
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Delivery fee</div>
-              <div>N1000</div>
+              <div className="font-semibold">N1000</div>
             </div>
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Discount</div>
-              <div>N0</div>
+              <div className="font-semibold">N0</div>
             </div>
             <div className="flex justify-between mt-8 font-semibold">
               <div>Total cost</div>
@@ -69,6 +72,23 @@ function Cart() {
           </div>
         </div>
       )}
+      <div className="flex-col hidden md:flex gap-6 items-center justify-center">
+        <h2 className="text-xl">Customers who viewed this also viewed</h2>
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">
+          {" "}
+          {viewed.map((product) => (
+            <Card
+              key={product.id}
+              picture={product.productPicture}
+              price={product.productPrice}
+              label={product.productName}
+              rating={product.productRating}
+              newProduct={product.newProduct}
+              id={product.id}
+            />
+          ))}
+        </div>{" "}
+      </div>
     </div>
   );
 }
