@@ -13,7 +13,7 @@ function Hero() {
       <div className="hero-content text-neutral-content">
         <div className="max-w-full">
           <h1 className="mb-5 text-2xl md:text-5xl font-semibold lg:text-6xl">
-            Discover Your Signature Scent With TimbuShop
+            Discover Your Signature <br/> Scent With TimbuShop
           </h1>
           <p className="mb-5 text-white text-xs md:text-base lg:text-xl">
             Get 15% off any Order above N4500
