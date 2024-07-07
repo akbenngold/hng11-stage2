@@ -23,7 +23,7 @@ function Hero() {
           </button>
         
       </div>{" "}
-      <div className="hero-overlay bg-contain bg-opacity-60"></div>
+      <div className="w-4/12"></div>
     </div>
   );
 }
