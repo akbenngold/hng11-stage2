@@ -12,13 +12,13 @@ function Cart() {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
 
   return (
-    <div className="lg:pt-20 container mt-16 lg:mt-0 px-4 mb-20 mx-auto w-full flex flex-col items-center  justify-center gap-4">
+    <div className="lg:pt-20 container lg:bg-white mt-16 lg:mt-0 px-4 mb-20 mx-auto w-full flex flex-col justify-center gap-4">
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         CART
       </h1>
       {/*  */}
       {/*  */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 w-full place-items-center">
+      <div className="grid grid-cols-1 gap-6  w-80vw place-items-center">
         {products.map((product) => {
           if (cartItems[product.id] !== 0) {
             return (
@@ -38,7 +38,7 @@ function Cart() {
       {getTotalCartAmount() > 0 ? (
         <>
           {" "}
-          <div className="fredoka w-full px-4 mt-4 flex flex-col gap-4">
+          <div className="fredoka w-full lg:w-[55%] px-4 mt-4 mx-auto flex  flex-col gap-4">
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Subtotal</div>
               <div className="font-semibold">N{getTotalCartAmount()}</div>
@@ -56,7 +56,7 @@ function Cart() {
               <div>N{getTotalCartAmount() + 1000}</div>
             </div>
           </div>
-          <Link to="/checkout" className="w-full">
+          <Link to="/checkout" className="w-full mx-auto lg:w-[55%]">
             <Button>Checkout</Button>
           </Link>
         </>
