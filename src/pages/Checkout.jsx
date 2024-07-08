@@ -45,7 +45,7 @@ function Checkout() {
             </span>
           </div>
 
-          <div className="border-2 p-4 rounded-lg flex gap-5 items-center text-xs md:text-base">
+          <div className="border-2 p-4 rounded-lg flex gap-5 items-center text-xs md:text-base cursor-pointer">
             <span className="">+</span>Add new address
           </div>
         </div>
@@ -58,7 +58,7 @@ function Checkout() {
           <div className="border-2 p-4 rounded-lg h-20 flex items-center justify-center">
             <img src={cardinfo} className="h-8" alt="" />
           </div>
-          <div className="border-2 p-4 rounded-lg flex gap-5 items-center text-xs md:text-base">
+          <div className="border-2 p-4 rounded-lg flex gap-5 items-center text-xs md:text-base cursor-pointer">
             <span className="">+</span>Add new card
           </div>
         </div>
