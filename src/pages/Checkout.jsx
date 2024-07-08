@@ -20,7 +20,7 @@ function Checkout() {
             Shipping Address
           </h2>
           <div className="border-2 p-4 rounded-lg h-20">
-            <h3 className="font-medium text-sm md:text-base flex gap-2 items-center">
+            <h3 className="font-medium text-sm md:text-base flex gap-2 items-center cursor-pointer">
               <svg
                 width="16"
                 height="16"
@@ -55,7 +55,7 @@ function Checkout() {
           <h2 className="font-bold text-base md:text-[1.5rem]">
             Payment Method
           </h2>
-          <div className="border-2 p-4 rounded-lg h-20 flex items-center justify-center">
+          <div className="border-2 p-4 rounded-lg h-20 flex items-center justify-center cursor-pointer">
             <img src={cardinfo} className="h-8" alt="" />
           </div>
           <div className="border-2 p-4 rounded-lg flex gap-5 items-center text-xs md:text-base cursor-pointer">
