@@ -10,7 +10,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
   return (
     <div className="card card-side bg-white lg:bg-[#F7F7F7] shadow-sm border border-[b4a6a6] fredoka w-[85vw] lg:h-48 p-6">
       <figure className="flex flex-col font-normal justify-center ">
-        <div className="">
+        <div className="my-auto">
           {" "}
           <img src={picture} alt="Movie" className="lg:h-[80%]" />{" "}
         </div>
