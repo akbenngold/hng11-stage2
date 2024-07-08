@@ -56,8 +56,8 @@ function DesktopNavbar() {
                 {getUniqueItemsCount()}
               </span>
               <svg
-                width="25"
-                height="24"
+                width="30"
+                height="29"
                 viewBox="0 0 33 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +78,8 @@ function DesktopNavbar() {
           </div>
           <NavLink to="/checkout">
             <svg
-              width="25"
-              height="24"
+              width="30"
+              height="29"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
