@@ -8,7 +8,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
   const cartItemAmount = cartItems[id];
 
   return (
-    <div className="card card-side bg-white shadow-xl fredoka px-6">
+    <div className="card card-side bg-white shadow-sm fredoka px-6">
       <figure>
         <img src={picture} alt="Movie" />
       </figure>
