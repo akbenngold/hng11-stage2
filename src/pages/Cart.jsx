@@ -38,7 +38,7 @@ function Cart() {
       {getTotalCartAmount() > 0 ? (
         <>
           {" "}
-          <div className="fredoka w-full lg:w-[55%] px-4 mt-4 mx-auto flex  flex-col gap-4">
+          <div className="fredoka w-full lg:w-[50%] px-4 mt-4 mx-auto flex  flex-col gap-4">
             <div className="flex justify-between">
               <div className="text-[#9D9C9C]">Subtotal</div>
               <div className="font-semibold">N{getTotalCartAmount()}</div>
@@ -56,7 +56,7 @@ function Cart() {
               <div>N{getTotalCartAmount() + 1000}</div>
             </div>
           </div>
-          <Link to="/checkout" className="w-full mx-auto lg:w-[55%]">
+          <Link to="/checkout" className="w-full mx-auto lg:w-[35%]">
             <Button>Checkout</Button>
           </Link>
         </>
