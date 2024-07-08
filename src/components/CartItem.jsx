@@ -67,7 +67,7 @@ function CartItem({ newProduct, id, picture, price, label, rating }) {
             <RiDeleteBin6Line />
           </div>{" "}
           <div className="flex flex-col h-full justify-between">
-            {price}{" "}
+            <span className="font-semibold">N{price} </span>
             <div className="lg:flex gap-2 hidden ">
               {cartItemAmount < 1 ? (
                 <div className="bg-neutral-300  text-white h-6 w-6 font-bold flex items-center justify-center rounded-full">
