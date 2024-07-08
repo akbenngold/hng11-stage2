@@ -37,7 +37,7 @@ function DesktopNavbar() {
         <img src={logo} className="h-6" alt="" />
         <a className="btn btn-ghost text-xl">TimbuCloudShop</a>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end cursor-pointer">
         <img src={image} className="w-[300px]" alt="" />
       </div>
     </div>
