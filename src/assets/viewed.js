@@ -27,14 +27,7 @@ const viewed = [
     productPicture: smartcw,
     newProduct: true,
   },
-  {
-    id: 7,
-    productName: "Giorgio Armani for men 5434 (100ml)",
-    productPrice: 1900,
-    productRating: 4.1,
-    newProduct: true,
-    productPicture: giorgio,
-  },
+
 ];
 
 export default viewed;
