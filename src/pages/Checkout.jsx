@@ -7,7 +7,7 @@ function Checkout() {
   const { getTotalCartAmount } = useContext(ShopContext);
 
   return (
-    <div className="container px-6 lg:pt-20 min-w-[100vw] pb-40 flex flex-col items-center gap-10  bg-white">
+    <div className="container px-6 lg:pt-20 mt-16 lg:mt-0 min-w-[100vw] pb-40 flex flex-col items-center gap-10  bg-white">
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         CHECKOUT
       </h1>

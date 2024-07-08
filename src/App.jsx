@@ -4,10 +4,6 @@ import { Route, Routes, NavLink } from "react-router-dom";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
-import { GoHomeFill } from "react-icons/go";
-import { RiSearchFill } from "react-icons/ri";
-import { FaUser } from "react-icons/fa6";
-import { FaShoppingCart } from "react-icons/fa";
 import MobileTopNav from "./components/MobileTopNav";
 import { ShopContext } from "./context/ShopContext";
 import DesktopNavbar from "./components/DesktopNavbar";
@@ -32,25 +28,6 @@ function App() {
       {/*  */}
       {/* bottom nav mobile */}
       {/*  */}
-      <div className="btm-nav bg-black rounded-full lg:hidden">
-        <NavLink to="/">
-          <GoHomeFill size="22px" />
-        </NavLink>
-        <NavLink to="/checkout">
-          <RiSearchFill size="22px" />
-        </NavLink>
-        <NavLink to="/cart">
-          <div className="indicator">
-            <span className="indicator-item badge bg-purple-600 border-none badge-secondary">
-              {getUniqueItemsCount()}
-            </span>
-            <FaShoppingCart size="22px" />
-          </div>
-        </NavLink>{" "}
-        <NavLink to="/list">
-          <FaUser size="22px" />
-        </NavLink>
-      </div>
       {/*  */}
       {/* footer */}
       {/*  */}

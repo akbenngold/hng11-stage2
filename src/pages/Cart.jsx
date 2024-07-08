@@ -12,7 +12,7 @@ function Cart() {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
 
   return (
-    <div className="lg:pt-20 container px-4 mb-20 mx-auto w-full flex flex-col items-center  justify-center gap-4">
+    <div className="lg:pt-20 container mt-16 lg:mt-0 px-4 mb-20 mx-auto w-full flex flex-col items-center  justify-center gap-4">
       <h1 className="brush-underline fredoka text-[#D9455F] text-2xl font-semibold mb-6">
         CART
       </h1>

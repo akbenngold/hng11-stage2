@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 function Footer() {
   return (
     <footer className=" bg-black flex  flex-col items-center justify-between text-neutral-300 p-10">
-      <div className="footer">
+      <div className="footer flex justify-between">
         {" "}
         <aside>
           <svg
@@ -23,25 +23,21 @@ function Footer() {
             />
           </svg>
 
-          <p>
-            TimbuCloudShop Ltd.
-            <br />
-            Providing reliable services since 2024
-          </p>
+          <p>TimbuCloudShop Ltd.</p>
         </aside>
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
+        </nav>
+        <nav className="hidden lg:flex flex-col">
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Deodorants</a>
+          <a className="link link-hover">Clothes</a>
+          <a className="link link-hover">Marketing</a>
+          <a className="link link-hover"></a>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
@@ -52,7 +48,7 @@ function Footer() {
       </div>
       <br />
       <br />
-      <p className="mb-20 lg:mb-8">
+      <p className="lg:mb-8 text-center">
         Built by Ojima & Mariam © 2024. All Right Reserved.{" "}
       </p>
     </footer>
